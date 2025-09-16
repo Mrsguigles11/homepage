@@ -9,14 +9,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10vh 15vw;
 }
 
 header {
     display: flex;
     align-items: center;
-    width: 100vw;
     height: 50vh;
-    padding: 10vh 15vw 0vh;
+    padding: 20px;
 }
 
 .raccoon_img {
@@ -29,4 +29,20 @@ header {
     height: 80%;
     border: 2px solid black;
     padding: 10px 10px 10px 20px;
+}
+
+.body_container {
+    width: 100%;
+    padding-top: 15vh;
+}
+
+.tile_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+}
+
+.work_tile {
+    border: 2px solid black;
+    height: 30vh;
 }
