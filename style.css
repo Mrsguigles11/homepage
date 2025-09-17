@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --main-color: rgb(0, 0, 0);
+    --secondary-color: rgb(44, 168, 54);
+    font-family: "Roboto", sans-serif;}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--main-color);
 }
 
 header {
@@ -16,26 +23,45 @@ header {
     align-items: center;
     height: 60vh;
     width: 100%;
-    padding: 10vh 12vw 10vh;
-    background: #0022fc;
-    background: linear-gradient(171deg,rgba(0, 34, 252, 1) 60%, rgba(255, 255, 255, 1) 60%);
+    padding: 10vh 12vw 5vh;
+    background: linear-gradient(171deg,var(--secondary-color) 60%, var(--main-color) 61%);
 }
 
 .raccoon_img {
     width: 50%;
     height: 100%;
     border-radius: 5px;
+    box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.25);
 }
 
 .header_body {
-    height: 80%;
-    border: 2px solid black;
-    padding: 10px 10px 10px 20px;
+    box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.logos_container {
+    align-self: flex-end;
+    display: flex;
+    column-gap: 15px;
+}
+
+.logos_container > img {
+    width: 30px;
+    height: 30px;
 }
 
 .body_container {
     width: 100%;
     padding: 15vh 10vw;
+}
+
+.body_container > h1 {
+    color: white;
 }
 
 .tile_container {
@@ -45,7 +71,7 @@ header {
 }
 
 .work_tile {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     height: 30vh;
 }
 
@@ -53,5 +79,5 @@ footer {
     width: 100%;
     display: flex;
     padding: 10vh 12vw;
-    background-color: green;
+    background-color: var(--secondary-color);
 }
