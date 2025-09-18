@@ -98,6 +98,10 @@ a {
     margin-bottom: 10px;
 }
 
+.work_tile_link {
+    width: 100%;
+}
+
 svg {
     width: 30px;
 }
@@ -135,4 +139,32 @@ footer > img {
 .footer_body > .logos_container {
     align-self: flex-start;
     margin-top: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .tile_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        flex-direction: column;
+        padding: 5vh 12vw 5vh;
+    }
+    .raccoon_img{
+        width: 100%;
+    }
+    .tile_container {
+        grid-template-columns: 1fr;
+    }
+    footer {
+        flex-direction: column;
+        padding: 5vh 12vw;
+    }
+    footer > img {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
