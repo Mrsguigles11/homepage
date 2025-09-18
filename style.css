@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --main-color: rgb(0, 0, 0);
-    --secondary-color: rgb(44, 168, 54);
+    --secondary-color: #2ca836;
     font-family: "Roboto", sans-serif;}
 
 * {
@@ -106,5 +106,33 @@ footer {
     width: 100%;
     display: flex;
     padding: 10vh 12vw;
-    background-color: var(--secondary-color);
+    background: #000000;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, var(--secondary-color)1%);
+    column-gap: 20px;
+}
+
+footer > img {
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 19px 3px rgba(196, 196, 196, 0.25);
+
+}
+
+.footer_body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.footer_svg {
+    width: 20px;
+    position: relative;
+    top: 5px;
+    fill: white;
+    margin-right: 10px;
+}
+
+.footer_body > .logos_container {
+    align-self: flex-start;
+    margin-top: 10px;
 }
