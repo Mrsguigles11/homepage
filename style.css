@@ -24,6 +24,7 @@ header {
     height: 60vh;
     width: 100%;
     padding: 10vh 12vw 5vh;
+    position: relative;
     background: linear-gradient(171deg,var(--secondary-color) 60%, var(--main-color) 61%);
 }
 
@@ -155,7 +156,19 @@ footer > img {
 }
 
 
-@media (max-width: 1024px) {
+@media (425px < width <= 768px) {
+    .raccoon_img {
+        height: auto;
+        bottom: 150px;
+    }
+    .header_body {
+        position: absolute;
+        min-height: 0;
+        left: 350px;
+        bottom: 100px;
+        padding-left: 80px;
+        padding-top: 50px;
+    }
     .tile_container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -173,7 +186,6 @@ footer > img {
     }
     .raccoon_img{
         width: 100%;
-        left: 0;
     }
     .tile_container {
         grid-template-columns: 1fr;
