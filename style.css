@@ -165,6 +165,7 @@ footer > img {
     header {
         flex-direction: column;
         padding: 5vh 12vw 5vh;
+        height: auto;
     }
     .header_body{
         width: 100%;
