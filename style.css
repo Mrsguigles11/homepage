@@ -183,6 +183,10 @@ footer > img {
     .header_body{
         width: 100%;
         height: auto;
+        padding-left: 25px;
+    }
+    .header_content > h1, .header_content > p {
+        text-align: center;
     }
     .raccoon_img{
         width: 100%;
