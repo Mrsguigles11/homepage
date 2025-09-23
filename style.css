@@ -160,11 +160,12 @@ footer > img {
     .raccoon_img {
         height: auto;
         bottom: 150px;
+        right: 30px;
     }
     .header_body {
         position: absolute;
         min-height: 0;
-        left: 350px;
+        left: 290px;
         bottom: 100px;
         padding-left: 80px;
         padding-top: 50px;
